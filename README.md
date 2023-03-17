@@ -46,10 +46,6 @@ Plot the performance plot
 Evaluate the model with the testing data.
 
 ## PROGRAM
-
-Include your code here
-
-## Dataset Information
 ```
 from google.colab import auth
 import gspread
@@ -94,6 +90,10 @@ X_n1 = [[500]]
 X_n1_1 = Scaler.transform(X_n1)
 model.predict(X_n1_1)
 ```
+
+## Dataset Information
+![image](https://user-images.githubusercontent.com/93427278/225969736-1cd238c3-730a-451a-ae09-d6f1df3d5c8c.png)
+
 ## OUTPUT
 
 ### Training Loss Vs Iteration Plot
