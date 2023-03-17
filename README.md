@@ -50,14 +50,55 @@ Evaluate the model with the testing data.
 Include your code here
 
 ## Dataset Information
+```
+from google.colab import auth
+import gspread
+from google.auth import default
+import pandas as pd
+auth.authenticate_user()
+creds, _ = default()
+gc = gspread.authorize(creds)
+worksheet = gc.open('vishu dataset').sheet1
+rows = worksheet.get_all_values()
+df = pd.DataFrame(rows[1:], columns=rows[0])
+df = df.astype({'INPUT':'float'})
+df = df.astype({'OUTPUT':'float'})
+df
+import pandas as pd
+from sklearn.model_selection import train_test_split
+# To scale
+from sklearn.preprocessing import MinMaxScaler
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+X = df[['INPUT']].values
+y = df[['OUTPUT']].values
 
-Include screenshot of the dataset
-
+X
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size = 0.33,random_state=33)
+Scaler = MinMaxScaler()
+Scaler.fit(X_train)
+X_train1 = Scaler.transform(X_train)model = Sequential([
+    Dense(5,activation = 'relu'),
+    Dense(10,activation = 'relu'),
+    Dense(1)
+])
+model.compile(optimizer='rmsprop',loss = 'mse')
+model.fit(X_train1,y_train,epochs=5000)
+loss_df = pd.DataFrame(model.history.history)
+loss_df.plot()
+X_test1 = Scaler.transform(X_test)
+model.evaluate(X_test1,y_test)
+model.evaluate(X_test1,y_test)
+## new prediction
+X_n1 = [[500]]
+X_n1_1 = Scaler.transform(X_n1)
+model.predict(X_n1_1)
+```
 ## OUTPUT
 
 ### Training Loss Vs Iteration Plot
 
-Include your plot here
+![image](https://user-images.githubusercontent.com/93427278/225967668-85eb8c4b-11e1-4d3c-926c-9041a5df9734.png)
 
 ### Test Data Root Mean Squared Error
 
