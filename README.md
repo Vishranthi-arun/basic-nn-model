@@ -6,10 +6,10 @@ Neural networks consist of simple input/output units called neurons. These units
 <br><br>
 Regression helps in establishing a relationship between a dependent variable and one or more independent variables. Regression models work well only when the regression equation is a good fit for the data. Although neural networks are complex and computationally expensive, they are flexible and can dynamically pick the best type of regression, and if that is not enough, hidden layers can be added to improve prediction.
 <br><br>
-Build your training and test set from the dataset, here we are making the neural network 2 hidden layer with activation layer as relu and with their nodes in them. Now we will fit our dataset and then predict the value.
+Build your training and test set from the dataset, here we are making the neural network 3 hidden layer with activation layer as relu and with their nodes in them. Now we will fit our dataset and then predict the value.
 <br>
 ## Neural Network Model
-![image](https://user-images.githubusercontent.com/93427278/226187960-957431be-e9fb-4907-81f6-a2bb20a34bea.png)
+![img1](https://user-images.githubusercontent.com/93427278/226161302-d288c875-b583-4b44-a3a7-16b97e78964c.png)
 ## DESIGN STEPS
 ### STEP 1:
 Loading the dataset
@@ -77,11 +77,14 @@ model.predict(X_n1_1)
 ![image](https://user-images.githubusercontent.com/93427278/225969736-1cd238c3-730a-451a-ae09-d6f1df3d5c8c.png)
 ## OUTPUT
 ### Training Loss Vs Iteration Plot
-![image](https://user-images.githubusercontent.com/93427278/225967668-85eb8c4b-11e1-4d3c-926c-9041a5df9734.png)
-![image](https://user-images.githubusercontent.com/93427278/226158533-41ac451f-e6d4-4266-a36d-cd3819af0129.png)
+![image](https://user-images.githubusercontent.com/93427278/226190122-434ff812-2a7c-444a-a258-08f8dc70b199.png)
+![image](https://user-images.githubusercontent.com/93427278/226190162-287870a1-799d-4b17-bb43-5ed20e8272cd.png)
+
 ### Test Data Root Mean Squared Error
-![image](https://user-images.githubusercontent.com/93427278/226158601-60d55de3-8047-4e53-9f54-655fe8a5dc6d.png)
+![image](https://user-images.githubusercontent.com/93427278/226190189-71bea52c-a129-4e24-bfc2-42ccc6d24664.png)
+
 ### New Sample Data Prediction
-![image](https://user-images.githubusercontent.com/93427278/226158628-3c45d909-0ad5-4721-abe3-a5dc825b184a.png)
+![image](https://user-images.githubusercontent.com/93427278/226190200-e3f01106-87db-4c53-912b-ad29a6ba99b1.png)
+
 ## RESULT
 Thus a neural network regression model for the given dataset is written and executed successfully.
