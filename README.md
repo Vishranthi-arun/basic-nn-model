@@ -14,8 +14,6 @@ Build your training and test set from the dataset, here we are making the neural
 ## Neural Network Model
 ![img1](https://user-images.githubusercontent.com/93427278/226161302-d288c875-b583-4b44-a3a7-16b97e78964c.png)
 
-
-
 ## DESIGN STEPS
 
 ### STEP 1:
