@@ -9,7 +9,7 @@ Regression helps in establishing a relationship between a dependent variable and
 Build your training and test set from the dataset, here we are making the neural network 3 hidden layer with activation layer as relu and with their nodes in them. Now we will fit our dataset and then predict the value.
 <br>
 ## Neural Network Model
-![img1](https://user-images.githubusercontent.com/93427278/226161302-d288c875-b583-4b44-a3a7-16b97e78964c.png)
+![image](https://user-images.githubusercontent.com/93427278/226187960-957431be-e9fb-4907-81f6-a2bb20a34bea.png)
 ## DESIGN STEPS
 ### STEP 1:
 Loading the dataset
