@@ -1,9 +1,6 @@
 # Developing a Neural Network Regression Model
-
 ## AIM
-
 To develop a neural network regression model for the given dataset.
-
 ## THEORY
 Neural networks consist of simple input/output units called neurons. These units are interconnected and each connection has a weight associated with it. Neural networks are flexible and can be used for both classification and regression. In this article, we will see how neural networks can be applied to regression problems.
 <br><br>
@@ -13,37 +10,21 @@ Build your training and test set from the dataset, here we are making the neural
 <br>
 ## Neural Network Model
 ![img1](https://user-images.githubusercontent.com/93427278/226161302-d288c875-b583-4b44-a3a7-16b97e78964c.png)
-
 ## DESIGN STEPS
-
 ### STEP 1:
-
 Loading the dataset
-
 ### STEP 2:
-
 Split the dataset into training and testing
-
 ### STEP 3:
-
 Create MinMaxScalar objects ,fit the model and transform the data.
-
-### STEP 4:
-
+### STEP 4
 Build the Neural Network Model and compile the model.
-
 ### STEP 5:
-
 Train the model with the training data.
-
 ### STEP 6:
-
 Plot the performance plot
-
 ### STEP 7:
-
 Evaluate the model with the testing data.
-
 ## PROGRAM
 ```
 Developed by: Vishranthi A
@@ -71,7 +52,6 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 X = df[['INPUT']].values
 y = df[['OUTPUT']].values
-
 X
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size = 0.33,random_state=33)
 Scaler = MinMaxScaler()
@@ -93,22 +73,15 @@ X_n1 = [[500]]
 X_n1_1 = Scaler.transform(X_n1)
 model.predict(X_n1_1)
 ```
-
 ## Dataset Information
 ![image](https://user-images.githubusercontent.com/93427278/225969736-1cd238c3-730a-451a-ae09-d6f1df3d5c8c.png)
-
 ## OUTPUT
-
 ### Training Loss Vs Iteration Plot
-
 ![image](https://user-images.githubusercontent.com/93427278/225967668-85eb8c4b-11e1-4d3c-926c-9041a5df9734.png)
 ![image](https://user-images.githubusercontent.com/93427278/226158533-41ac451f-e6d4-4266-a36d-cd3819af0129.png)
-
 ### Test Data Root Mean Squared Error
 ![image](https://user-images.githubusercontent.com/93427278/226158601-60d55de3-8047-4e53-9f54-655fe8a5dc6d.png)
-
 ### New Sample Data Prediction
 ![image](https://user-images.githubusercontent.com/93427278/226158628-3c45d909-0ad5-4721-abe3-a5dc825b184a.png)
-
 ## RESULT
- Thus a neural network regression model for the given dataset is written and executed successfully.
+Thus a neural network regression model for the given dataset is written and executed successfully.
