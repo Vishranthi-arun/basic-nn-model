@@ -47,6 +47,10 @@ Evaluate the model with the testing data.
 
 ## PROGRAM
 ```
+Developed by: Vishranthi A
+Register No. : 212221230124
+```
+```
 from google.colab import auth
 import gspread
 from google.auth import default
@@ -99,14 +103,13 @@ model.predict(X_n1_1)
 ### Training Loss Vs Iteration Plot
 
 ![image](https://user-images.githubusercontent.com/93427278/225967668-85eb8c4b-11e1-4d3c-926c-9041a5df9734.png)
+![image](https://user-images.githubusercontent.com/93427278/226158533-41ac451f-e6d4-4266-a36d-cd3819af0129.png)
 
 ### Test Data Root Mean Squared Error
-
-Find the test data root mean squared error
+![image](https://user-images.githubusercontent.com/93427278/226158601-60d55de3-8047-4e53-9f54-655fe8a5dc6d.png)
 
 ### New Sample Data Prediction
-
-Include your sample input and output here
+![image](https://user-images.githubusercontent.com/93427278/226158628-3c45d909-0ad5-4721-abe3-a5dc825b184a.png)
 
 ## RESULT
  Thus a neural network regression model for the given dataset is written and executed successfully.
