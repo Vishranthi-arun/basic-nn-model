@@ -69,7 +69,7 @@ X_test1 = Scaler.transform(X_test)
 model.evaluate(X_test1,y_test)
 model.evaluate(X_test1,y_test)
 ## new prediction
-X_n1 = [[500]]
+X_n1 = [[50]]
 X_n1_1 = Scaler.transform(X_n1)
 model.predict(X_n1_1)
 ```
